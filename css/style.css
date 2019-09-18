@@ -1,0 +1,333 @@
+/* Global*/
+body{
+	font: 15px/1.6em Arial, Helvetica, Sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 50%;
+	margin-left: 10%;
+}
+
+ li{
+ 	list-style: none;
+ }
+
+ a{
+ 	text-decoration: none;
+ }
+
+ ul{
+ 	padding: 0;
+ }
+
+ h3, h2 {
+ 	margin-top: 5px;
+ 	margin-bottom: 5px;
+ }
+
+ h2{
+ 	font-size: 130%;
+ 	font-weight: normal;
+ }
+
+/*Header*/
+header{
+	display: flex;
+	margin-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header input{
+	height: 34px;
+	width: 620px;
+	font: 15px/1.6em Arial, Helvetica, Sans-serif;
+	border: 1px solid #DDD;
+	border-radius: 5em; 
+	padding: 5px 15px;
+}
+
+header input:hover{
+	box-shadow: 2px 2px 5px #DDD, -2px -1px 1px #DDD;
+}
+
+header .left{
+	flex: 3;
+}
+
+header .right{
+	flex: 1;
+	text-align: right;
+}
+
+header .gimg{
+	width: 92px;
+	height: 30px;
+	position: relative;
+	top: 10px;
+	margin-right: 30px;
+}
+
+header .gapps{
+	width: 30px;
+	height: 30px;
+	opacity: .7;
+}
+
+header .gapps:hover{
+	opacity: 1;
+}
+/*Navigation*/
+
+nav {
+	border-bottom: 1px solid #DDD;
+}
+nav ul{
+	margin-left: 11%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+nav a{
+	color: #777;
+	font-size: 13px;
+}
+
+nav a:hover:not(.button){
+	color: #1464f4;
+}
+
+nav li{
+	display: inline;
+	padding: 5px 10px;
+}
+
+nav li.seperate{
+	margin-left: 40px;
+}
+
+nav li.button:hover{
+	border: 1px solid #DDD;
+	background: #F4F4F4;
+}
+
+/*main*/
+
+main .snippet{
+	color: #777;
+	margin-left: 1%;
+	position: relative;
+	padding: 0;
+}
+
+main .boxa, main .boxb{
+	width: 80%;
+	border: 1px solid #DDD;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+main .boxa{
+	position: relative;
+	font-size: 16px;
+	color: #222;
+}
+
+main .boxa img{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+}
+
+main .boxa ol{
+	padding-left: 15px;
+	margin-bottom: 0px;
+}
+
+main .boxa li{
+	list-style-type: decimal;
+}
+
+main .boxa p{
+	color: #777;
+	margin-left: 20px;
+}
+
+main .boxa h2>a, main .box h2>a, main .boxb a, main .sindex a{
+	color: #120A8F;
+}
+
+main .boxa h2>a:hover, main .box h2>a:hover, main .table a:hover{
+	text-decoration: underline;
+}
+
+main .boxa .green, main .box .green{
+	color: #006400;
+}
+
+main .under{
+	margin-top: 0px;
+	margin-left: 300px;
+}
+
+main .under li{
+	display: inline;
+	font-size: small;
+	padding-left: 20px;
+	color: #777;
+}
+
+main .under li>a:hover, main p>small:hover, main .boxb .readmore:hover{
+	text-decoration: underline;
+}
+
+main .under li>a, main p>small{
+ 	color: #777; 	
+}
+
+main .ppask_under{
+	font-style: italic;
+	margin-left: 70%;
+}
+
+main .under li>a:hover{
+	text-decoration: underline;
+}
+
+main .box{
+	width: 80%;
+	padding: 5px 20px;
+	color: #333;
+}
+
+main .box .green{
+	font-size: 16px;
+}
+
+main .ppask{
+	width: 80%;
+	margin-top: 20px;
+}
+
+main .ppask li{
+	font-size: 16px;
+	width: 100%;
+	color: #222;
+	border-bottom: 1px solid #DDD;
+	padding: 10px 20px;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+main .ppask li:first-child{
+	border-top: 1px solid #DDD;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+main .ppask li:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+main .boxb{
+	position: relative;
+	padding-top: 0;
+	margin-top: 20px;
+	margin-bottom:40px;
+}
+
+main .boxb .readmore{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	color: #777;
+}
+
+main .boxb p{
+	color: #777;
+	margin-bottom: 0;
+}
+
+main .boxb h2, main .sindex h2, main .table .active{
+	color: #222;
+	margin-bottom: 10px;
+} 
+
+main .sindex a{
+	font-weight: bold;
+}
+
+main .table{
+	margin-left: 20%;
+	margin-bottom: 40px;
+}
+
+main .table a{
+	color: #1E90FF;
+}
+main .boxb .bwares{
+	display: flex;
+}
+
+main .sindex{
+	padding-left: 20px;
+}
+
+main .sindex div{
+	display: flex;
+}
+
+main .sindex .float{
+	padding: 10px;
+}
+
+/*footer*/
+footer{
+	font-size: 13px;
+	color: #666;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	background: #F4F4F4;
+}
+
+footer a{
+	color: #666;
+}
+
+footer a:hover{
+	color: #222;
+}
+
+footer .standalone, footer .footernav ul{
+	display: flex;
+}
+
+.footernav ul, .standalone{
+	padding-left: 12%;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.standalone{
+	border-bottom: 1px solid #DDD;
+}
+
+.standalone p{
+	padding-right: 20px;
+}
+
+.standalone .left{
+	border-right: 1px solid #DDD;
+} 
+
+.standalone p>strong{
+	padding-left: 20px;
+}
+
+.footernav li{
+	margin-right: 15px;
+}
